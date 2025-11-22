@@ -170,7 +170,7 @@ def init(editor):
             if my + i < editor.height - 2:
                 editor.safe_addstr(my + i, max(0, mx - 10), l)
         
-        editor.safe_addstr(my + len(logo) + 1, max(0, mx - 12), f"CAFFEE Editor v1.3", curses.A_BOLD)
+        editor.safe_addstr(my + len(logo) + 1, max(0, mx - 12), f"CAFFEE Editor v1.2", curses.A_BOLD)
         jp_msg = "何かキーを押して開始..."
         editor.safe_addstr(my + len(logo) + 3, max(0, mx - len(jp_msg)), jp_msg, curses.A_DIM)
         editor.stdscr.refresh()
