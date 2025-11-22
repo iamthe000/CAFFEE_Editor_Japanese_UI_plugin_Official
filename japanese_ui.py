@@ -77,7 +77,7 @@ def init(editor):
     original_draw_ui = editor.draw_ui
 
     def draw_ui_jp():
-        version = "1.3"
+        version = "1.2"
         editor_name = "CAFFEE"
         
         mark_status = "[選択中]" if editor.mark_pos else ""
@@ -171,7 +171,7 @@ def init(editor):
                 editor.safe_addstr(my + i, max(0, mx - 10), l)
         
         editor.safe_addstr(my + len(logo) + 1, max(0, mx - 12), f"CAFFEE Editor v1.2", curses.A_BOLD)
-        jp_msg = "何かキーを押して開始..."
+        jp_msg = "いずれかのキーを淹れてください..."
         editor.safe_addstr(my + len(logo) + 3, max(0, mx - len(jp_msg)), jp_msg, curses.A_DIM)
         editor.stdscr.refresh()
         editor.stdscr.getch()
